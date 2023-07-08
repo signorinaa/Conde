@@ -1,0 +1,98 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+:root{
+  --font-color: #C1C1C1;
+  --label-color: #7a7a7a;
+}
+
+ion-grid{
+  width: 100%;
+}
+
+
+ion-row{
+  // border: 1px solid red;
+  display: flex;
+  justify-content: center;
+}
+
+#logo{
+  display: flex;
+  justify-content: center;
+  padding: 8em 0 0 0;
+}
+
+ion-img{
+  width: 50%;
+  height: auto;
+}
+
+#login-form{
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap:1em;
+  padding: 2em 0 5em 0;
+  
+}
+
+
+ion-input{
+  width:80%;
+  border: 1px solid grey;
+  --padding-start:1em;
+  border-radius: 5px;
+  color: #7a7a7a;
+  font: normal 14px Poppins;
+}
+
+
+ion-button{
+
+}
+
+#login-bttn{
+
+  width: 80%;
+  --border-radius: 5px;
+  font: normal 14px Poppins;
+  --background: #64CCC5;
+}
+
+#forgot-bttn{
+  color: #C1C1C1;
+  --background:white;
+  width: 80%;
+  --border-radius: 5px;
+  font: normal 12px Poppins;
+
+}
+
+
+#register{
+  // padding-top: 11em;
+  
+}
+#register > ion-button{
+
+  --background: white;
+  color:#C1C1C1;
+  --border-radius: 5px;
+  width: 80%;
+  font: normal 12px Poppins;
+}
+
+
+#register > ion-button > span {
+  padding-left: .2em;
+  font-weight: bold;
+  color: #9A005B;
+  font: normal 12px Poppins;
+  
+}

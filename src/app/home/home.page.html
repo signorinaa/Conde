@@ -1,0 +1,58 @@
+<ion-content id ="content-container">
+
+    <ion-grid id = "main-container">
+      
+
+      <ion-row id = "logo">
+  
+            <ion-img src = "assets/logo.jpg"></ion-img>
+         
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col id ="login-form">
+          <ion-input label="LRN" type="number" label-placement="floating" placeholder="Enter your LRN"></ion-input>
+          <ion-input  label="Password" type="password" label-placement="floating" placeholder="Enter your Password"></ion-input>
+          <ion-button id ="login-bttn" (click) ="goToHome()">Login</ion-button>
+          <ion-button id ="forgot-bttn" (click) ="goToForgot()">Forgot Password</ion-button>
+        </ion-col>
+
+
+      </ion-row>
+
+      <ion-row id = "register">
+        <ion-button (click) ="goToRegister()">
+          Don't have an account? <span>Register</span>
+        </ion-button>
+      </ion-row>
+<!-- 
+
+      <ion-row>
+        <ion-col size="8" offset="2">
+          <ion-input label="Password" type="password" label-placement="floating" placeholder="Enter your Password"></ion-input>
+        </ion-col>
+      </ion-row> -->
+
+<!-- 
+      <ion-row>
+        <ion-col size="8" offset="2">
+        </ion-col>
+      </ion-row> -->
+
+      <!-- <ion-row>
+        <ion-col size="8" offset="2">
+        <ion-button fill="clear" color="medium">
+
+        </ion-button>
+        </ion-col> 
+      </ion-row> -->
+
+
+    </ion-grid>
+</ion-content>
+
+<!-- <div class="lower-content">
+  <p>Don't have an Account</p>
+</div>
+ -->

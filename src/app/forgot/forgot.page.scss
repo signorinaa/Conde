@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+ion-grid{
+    width: 100%;
+    overflow-y:hidden;
+}
+
+
+#form{
+    height: 80vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+ion-label, ion-input{
+    width: 80%;
+}
+
+ion-row{
+}
+
+ion-label{
+    color: #828282;
+    font: normal 12px Poppins;
+    text-align: center;
+}
+
+ion-input{
+    width:80%;
+    border: 1px solid grey;
+    --padding-start:1em;
+    border-radius: 5px;
+    font: normal 14px Poppins;
+    color: #828282;
+}
+
+#forgot-bttn {
+    width: 80%;
+    --border-radius: 5px;
+    --background: #64CCC5;
+    font: normal 14px Poppins;
+}
+
+#register{
+
+    height: 10vh;
+    display: flex;
+
+  }
+
+
+  #register > ion-button{
+    justify-content: center;
+    --background: white;
+    color:#C1C1C1;
+    --border-radius: 5px;
+    width: 100%;
+    font: normal 12px Poppins;
+  }
+  #register> ion-button> span {
+    font-weight: bold;
+    color: #9A005B;
+    font: normal 12px Poppins;
+    padding-left: .2em;
+  }
+  
+  #back{
+  
+  }
+
+  #back > ion-button{
+    --background: white;
+    color:#C1C1C1;
+    margin: 1em  0 0 1em;
+    font: normal 14px Poppins;
+}

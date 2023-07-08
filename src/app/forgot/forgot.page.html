@@ -1,0 +1,27 @@
+<ion-content id ="content-container">
+
+  <ion-grid id = "main-container">
+    
+    <ion-row id ="back">
+      <ion-button (click) = "goToHome()">Back</ion-button>
+    </ion-row>
+
+    <ion-row id = "form">
+      <ion-label>Enter your email and we'll send you a link to change a new password</ion-label>
+      <ion-input label="Email" type="text" label-placement="floating" placeholder="Enter your Email"></ion-input>
+      <ion-button id ="forgot-bttn">Forgot Password</ion-button>
+
+   
+    </ion-row>
+
+      <ion-row id ="register">
+        <ion-button (click) = "goToRegister()">
+          Don't have an account? <span>Register</span>
+        </ion-button>
+      </ion-row>
+
+
+
+  </ion-grid>
+</ion-content>
+
