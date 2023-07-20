@@ -1,0 +1,648 @@
+<ion-grid>
+
+  <ion-row id ="header">
+      <ion-img src ="../../assets/image/logo.png"> </ion-img>
+      <h6> ENROLLMENT </h6>
+  </ion-row>
+
+  <ion-row id = "student-info">
+      <div>
+        <ion-label>Year: </ion-label>
+        <p>S.Y 2023-2024 </p>
+      </div>
+      <div>
+        <ion-label>Name: </ion-label>
+        <p> {{ enterLname}}, {{enterFname}}, {{enterMI}}.</p> 
+      </div>
+      <div>
+        <ion-label>Grade: </ion-label>
+        <p>{{selectYear}} </p>
+      </div>
+
+      <div *ngIf="showStrand">
+        <ion-label>Strand: </ion-label>
+        <p>{{selectStrand}} </p>
+      </div>
+
+      <div>
+        <ion-label>LRN: </ion-label>
+        <p> {{enterLRN}}</p>
+      </div>
+  </ion-row>
+
+  <ion-row id="section">
+    <div>
+      <ion-select label="Section" label-placement="fixed" [(ngModel)] ="selectSection" placeholder="Selection your section">
+        <ion-select-option value="section1">Section 1</ion-select-option>
+        <ion-select-option value="section2">Section 2</ion-select-option>
+      </ion-select>
+    </div>
+  </ion-row>
+
+
+  <ion-row id="subject">
+      <div>
+        Subjects:
+      </div>
+  </ion-row>
+
+
+<!-- For Grade 7-10 -->
+  <ion-row id ="subject_list" *ngIf ="showSub_grade">
+
+        <table>
+            <tr>
+              <td id ="subject-title">Mathematics</td>
+              <td id ="buttons">
+                <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+              </td>
+            </tr>
+
+            <tr>
+              <td id ="subject-title">Science</td>
+              <td id ="buttons">
+                <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+              </td>
+            </tr>
+
+
+            <tr>
+              <td id ="subject-title">Filipino</td>
+              <td id ="buttons">
+                <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+            </tr>
+
+            <tr>
+              <td id ="subject-title">MAPEH</td>
+              <td id ="buttons">
+                <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+              </td>
+            </tr>
+
+            <tr>
+              <td id ="subject-title">Edukasyon Sa Pagpapakatao</td>
+              <td id ="buttons">
+                <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+              </td>
+            </tr>
+
+            <tr>
+              <td id ="subject-title">TLE</td>
+              <td id ="buttons">
+                <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+              </td>
+            </tr>
+
+            <tr>
+              <td id ="subject-title">Araling Panlipunan</td>
+              <td id ="buttons">
+                <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+              </td>
+            </tr>
+
+        </table>
+  </ion-row>
+
+
+
+
+  <!-- For Grade 11 ABM -->
+
+  <ion-row id ="subject_list" *ngIf ="showSub_ABM11">
+
+    <table>
+        <tr>
+          <td id ="subject-title">Oral Communication </td>
+          <td id ="buttons">
+            <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+          </td>
+        </tr>
+
+        <tr>
+          <td id ="subject-title">Komunikasyon at Pananaliksik sa Wika at Kulturang Pilipino</td>
+          <td id ="buttons">
+            <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td id ="subject-title">General Mathematics</td>
+          <td id ="buttons">
+            <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+          </td>
+        </tr>
+
+        <tr>
+          <td id ="subject-title">Earth and Life Science</td>
+          <td id ="buttons">
+            <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+          </td>
+        </tr>
+
+        <tr>
+          <td id ="subject-title">Personal Development</td>
+          <td id ="buttons">
+            <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+          </td>
+        </tr>
+
+        <tr>
+          <td id ="subject-title">Understanding Culture, Society and Politics</td>
+          <td id ="buttons">
+            <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+          </td>
+        </tr>
+
+        <tr>
+          <td id ="subject-title">Physical Education and Health</td>
+          <td id ="buttons">
+            <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+          </td>
+        </tr>
+
+        
+        <tr>
+          <td id ="subject-title">Research in Daily Life 1</td>
+          <td id ="buttons">
+            <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+          </td>
+        </tr>
+
+    </table>
+</ion-row>
+
+
+  <!-- For Grade 12 ABM -->
+
+  <ion-row id ="subject_list" *ngIf ="showSub_ABM12">
+
+    <table>
+        <tr>
+          <td id ="subject-title">21st Century Literature from the Philippines and the World </td>
+          <td id ="buttons">
+            <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+          </td>
+        </tr>
+
+        <tr>
+          <td id ="subject-title">Introduction to the Philosophy of the Human Person</td>
+          <td id ="buttons">
+            <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td id ="subject-title">Contemporary Philippine Arts from the Regions</td>
+          <td id ="buttons">
+            <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+          </td>
+        </tr>
+
+        <tr>
+          <td id ="subject-title">Media and Information Literacy</td>
+          <td id ="buttons">
+            <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+          </td>
+        </tr>
+
+        <tr>
+          <td id ="subject-title">Physical Education and Health </td>
+          <td id ="buttons">
+            <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+          </td>
+        </tr>
+
+        <tr>
+          <td id ="subject-title">Research in Daily Life 2</td>
+          <td id ="buttons">
+            <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+          </td>
+        </tr>
+
+        <tr>
+          <td id ="subject-title">Fundamentals of Accounting, Business and Management 2 </td>
+          <td id ="buttons">
+            <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+          </td>
+        </tr>
+
+        
+        <tr>
+          <td id ="subject-title">Business Finance</td>
+          <td id ="buttons">
+            <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+          </td>
+        </tr>
+
+    </table>
+</ion-row>
+
+<!-- For Grade 11 HUMMS -->
+
+<ion-row id ="subject_list" *ngIf ="showSub_HUMMS11">
+
+  <table>
+      <tr>
+        <td id ="subject-title">Oral Communication </td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Komunikasyon at Pananaliksik sa Wika at Kulturang Pilipino</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td id ="subject-title">General Mathematics</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Earth and Life Science</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Contemporary Philippine Arts from the Regions</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Understanding Culture, Society and Politics</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Physical Education and Health</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      
+      <tr>
+        <td id ="subject-title">English for Academic and Professional Purposes</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+  </table>
+</ion-row>
+
+
+<!-- For Grade 12 HUMMS -->
+
+<ion-row id ="subject_list" *ngIf ="showSub_HUMMS12">
+
+  <table>
+      <tr>
+        <td id ="subject-title">Media and Information Literacy </td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Introduction to the Philosophy of the Human Person</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td id ="subject-title">Physical Science</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Physical Education and Health</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Research in Daily Life 1</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Culminating Activity</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Creative Writing </td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      
+      <tr>
+        <td id ="subject-title">Disciplines and Ideas in the Applied Social Sciences</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+  </table>
+</ion-row>
+
+
+<!-- For Grade 11 STEM -->
+
+<ion-row id ="subject_list" *ngIf ="showSub_STEM11">
+
+  <table>
+      <tr>
+        <td id ="subject-title">Oral Communication</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Komunikasyon at Pananaliksik sa Wika at Kulturang Pilipino</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td id ="subject-title">General Mathematics</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Earth Science</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Introduction to the Philosophy of the Human Person</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Physical Education and Health</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Empowerment Technologies (ETech): ICT for Professional Tracks</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      
+      <tr>
+        <td id ="subject-title">Pre-Calculus</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+  </table>
+</ion-row>
+
+
+<!-- For Grade 12 STEM -->
+
+<ion-row id ="subject_list" *ngIf ="showSub_STEM12">
+
+  <table>
+      <tr>
+        <td id ="subject-title">21st Century Literature from the Philippines and the World </td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Contemporary Philippine Arts from the Regions</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td id ="subject-title">Media and Information Literacy</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Physical Education and Health</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Understanding Culture, Society and Politics</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">General Physics 1 </td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">General Biology 1</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      
+      <tr>
+        <td id ="subject-title">Pagsulat sa Filipino sa Piling Larangan (Akademik) </td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+  </table>
+</ion-row>
+
+
+<!-- For Grade 11 ICT -->
+
+<ion-row id ="subject_list" *ngIf ="showSub_ICT11">
+
+  <table>
+      <tr>
+        <td id ="subject-title">Oral Communication</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Komunikasyon at Pananaliksik sa Wika at Kulturang Pilipino</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td id ="subject-title">General Mathematics</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Earth Science</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Personal Development</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Physical Education and Health</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Practical Research 1</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      
+      <tr>
+        <td id ="subject-title">21st Century Literature from Philippines and the World</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+  </table>
+</ion-row>
+
+
+
+<!-- For Grade 12 ICT -->
+
+<ion-row id ="subject_list" *ngIf ="showSub_ICT12">
+
+  <table>
+      <tr>
+        <td id ="subject-title">Understanding Culture, Society and Politics</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Practical Research 2</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+
+      <tr>
+        <td id ="subject-title">Pagsulat sa Filipino sa Piling Larangan</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Physical Education and Health</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">2D Animation 1</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Introduction to Object Oriented Programming</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      <tr>
+        <td id ="subject-title">Programming 3 (Developing ASP.NET MVC Application) </td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+      
+      <tr>
+        <td id ="subject-title">Programming 4 (JAVA SE)</td>
+        <td id ="buttons">
+          <ion-icon id ="check-icon" name="checkmark-circle"></ion-icon>
+        </td>
+      </tr>
+
+  </table>
+</ion-row>
+
+  <ion-row id =next>
+      <ion-button id ="next-bttn" (click) = "presentAlert()"> Enroll </ion-button>
+      <ion-button id ="back-bttn" (click) = "goToPrevious()"> Back </ion-button>
+  </ion-row>
+</ion-grid>

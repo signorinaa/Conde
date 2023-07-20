@@ -1,0 +1,98 @@
+<ion-grid>
+
+  <ion-row id ="header">
+      <ion-img src ="../../assets/image/logo.png"> </ion-img>
+      <h6> ENROLLMENT </h6>
+  </ion-row>
+
+  <ion-row id ="reminder"> 
+      <div>
+
+          <p>The Enrollment for the School Year 2023-2024 of 
+            incoming Grades 7 to 10, and Senior High School 
+            Grade11 to 12 learners will conducted from <b>May 10 </b>
+            to <b>June 9, 2023.</b>
+          </p>
+      </div>
+  </ion-row>
+
+
+  <ion-row id ="procedure">
+      <div>
+
+        <div id ="notice">
+           <p> Please fill the following form</p>
+        </div>
+        <div id ="lrn">
+          <ion-item>
+            <ion-label> LRN</ion-label>
+            <ion-input type ="number" [(ngModel)] = "enterLRN"  (input)="limitInputLength($event)" maxlength="12"></ion-input>
+          </ion-item>
+        </div>
+
+        <div id ="lname">
+          <ion-item>
+            <ion-input label ="Lastname" [(ngModel)] = "enterLname"></ion-input>
+          </ion-item>
+        </div>
+
+        <div id ="fname">
+          <ion-item>
+            <ion-input label ="Firstname" [(ngModel)] = "enterFname" ></ion-input>
+          </ion-item>
+        </div>
+        
+        <div id ="mi">
+          <ion-item>
+            <ion-input label ="Middle Initial" [(ngModel)] = "enterMI"></ion-input>
+          </ion-item>
+        </div>
+
+        <div id ="grade">
+          <ion-item>
+            <ion-select label="Grade" placeholder="Select Grade"  [(ngModel)] = "selectYear" (ionChange) = "changeStrand()">
+              <ion-select-option value="Grade-7">Grade 7</ion-select-option>
+              <ion-select-option value="Grade-8">Grade 8</ion-select-option>
+              <ion-select-option value="Grade-9">Grade 9</ion-select-option>
+              <ion-select-option value="Grade-10">Grade 10</ion-select-option>
+              <ion-select-option value="Grade-11">Grade 11</ion-select-option>
+              <ion-select-option value="Grade-12">Grade 12</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </div>
+        
+        <!-- <div id ="year" *ngIf = "showSY">    
+          <ion-item>
+            <ion-select label="Year" placeholder="2023-2024 (1st Sem)">
+              <ion-select-option value="grade7">2023-2024 (1st Sem)</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </div> -->
+
+
+        <div id ="year" *ngIf = "showSY2">    
+          <ion-item>
+            <ion-select label="Year" placeholder="2023-2024 ">
+              <ion-select-option value="grade7">2023-2024</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </div>
+  
+        <div id ="strand" *ngIf ="showStrand">
+          <ion-item>
+            <ion-select label="Strand" placeholder="Select Strand" [(ngModel)] = "selectStrand">
+              <ion-select-option value="STEM">STEM</ion-select-option>
+              <ion-select-option value="ABM">ABM</ion-select-option>
+              <ion-select-option value="HUMMS">HUMMS</ion-select-option>
+              <ion-select-option value="ICT">ICT</ion-select-option>
+
+            </ion-select>
+          </ion-item>
+        </div>
+
+        <ion-button id ="next-bttn" (click) = "goToEnroll2()"> Next</ion-button>
+      </div>
+  </ion-row>
+
+
+</ion-grid>

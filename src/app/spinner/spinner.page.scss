@@ -1,0 +1,61 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+ion-grid{
+    background: url(../../assets/image/stacked-peaks-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#header > div{
+    width: 100%;
+    background-image: url(../../assets/image/building.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+#header > div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba( 255, 255, 255, 0.75 );
+    padding: 1em;
+    // border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.header-content{
+    font: normal 12px Poppins-Medium;
+}
+
+.header-title{
+    font: normal 18px Poppins-Bold;
+}
+
+// Logo
+
+#logo-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 0;
+}
+
+#button-row{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 1em;
+
+}
+
+#button-row >ion-button{
+    width: 60%;
+    --border-radius:8px;
+    --background: #30B7D2;
+    font:normal 14px Poppins-Medium;
+}

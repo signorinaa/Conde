@@ -1,0 +1,44 @@
+<ion-grid>
+
+  <ion-row id ="header">
+      <ion-img src ="../../assets/image/logo.png"> </ion-img>
+      <h6> FORMS </h6>
+  </ion-row>
+
+  <ion-row id ="guide-row">
+    <div>
+      <h5>Request forms to registrar</h5>
+      <p> Select what document you needed and fill up the information below.</p>
+  </div>
+  </ion-row>
+
+  <ion-row id ="input-row">
+
+    <div>
+      <ion-input label="Name" label-placement="floating" fill="outline" placeholder="Enter name"></ion-input>
+      <ion-input label="LRN"  type ="number" label-placement="floating" fill="outline" placeholder="Enter LRN"></ion-input>
+      <ion-input label="Email" label-placement="floating" fill="outline" placeholder="Enter Email"></ion-input>
+
+     <ion-select label="Form" placeholder="Select Form">
+      <ion-select-option value="goodmoral">Good Moral</ion-select-option>
+      <ion-select-option value="form137">Form 137</ion-select-option>
+      <ion-select-option value="cog">Copy of Grades</ion-select-option>
+      <ion-select-option value="cor">Certificate of Registration</ion-select-option>
+    </ion-select>
+
+    <div id ="add-file">
+      <p>Photo of Request
+        <span>If the Form 137 is needed</span>
+      </p>
+      <ion-button> Add File</ion-button>
+    </div>
+    
+    </div>
+  </ion-row>
+
+  <ion-row id ="submit-row"> 
+    <ion-button (click) = "goToSubmit()">Submit</ion-button>
+  </ion-row>
+
+
+</ion-grid>

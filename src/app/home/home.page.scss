@@ -1,0 +1,134 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+
+:root{
+  --font-color: #C1C1C1;
+  --label-color: #7a7a7a;
+}
+
+ion-grid{
+  width: 100%;
+  background-color: white;
+}
+
+
+ion-row{
+  // border: 1px solid red;
+  display: flex;
+  justify-content: center;
+}
+
+#header > div{
+  width: 100%;
+  background-image: url(../../assets/image/building.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+
+#header > div > div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba( 255, 255, 255, 0.75 );
+  padding: 1em;
+  // border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.header-content{
+  font: normal 12px Poppins-Medium;
+}
+
+.header-title{
+  font: normal 18px Poppins-Bold;
+}
+
+#logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 6em 0 0 0;
+}
+
+#logo > h5{
+
+  font: normal 16px Poppins-Medium;
+}
+
+ion-img{
+  width: 50%;
+  height: auto;
+}
+
+#login-form{
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap:1em;
+  padding: 2em 0 5em 0;
+  
+}
+
+
+ion-input{
+  width:80%;
+  border: 1px solid grey;
+  --padding-start:1em;
+  border-radius: 5px;
+  color: #7a7a7a;
+  font: normal 14px Poppins;
+}
+
+
+ion-button{
+
+}
+
+#login-bttn{
+
+  width: 80%;
+  --border-radius: 5px;
+  font: normal 14px Poppins;
+  --background: #64CCC5;
+}
+
+#forgot-bttn{
+  color: #8f8f8f;
+  --background:white;
+  width: 80%;
+  --border-radius: 5px;
+  font: normal 12px Poppins;
+  --box-shadow:0px
+
+}
+
+
+#register{
+  // padding-top: 11em;
+  
+}
+#register > ion-button{
+
+  --background: white;
+  color: #8f8f8f;
+  --border-radius: 5px;
+  width: 80%;
+  font: normal 12px Poppins;
+  --box-shadow:0px
+}
+
+
+#register > ion-button > span {
+  padding-left: .2em;
+  font-weight: bold;
+  color: #9A005B;
+  font: normal 12px Poppins;
+  
+}

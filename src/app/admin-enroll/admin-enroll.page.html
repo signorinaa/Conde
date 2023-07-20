@@ -1,0 +1,170 @@
+<ion-grid>
+
+  <ion-row id ="header">
+      <ion-img src ="../../assets/image/logo.png"> </ion-img>
+      <h6> ENROLLMENT </h6>
+      <div (click) = "goToBack()" *ngIf = "back"> Back</div>
+      <div (click) = "goToPrevious()" *ngIf = "previous"> Previous</div>
+  </ion-row>
+
+  <ion-row id ="title-row">
+      <h5>List of Enrolled Students</h5>
+  </ion-row>
+
+    <!-- Students -->
+
+    <ion-row id ="student-list-row">
+
+        <div id="section-cont" *ngIf ="buttonRow"> 
+          <span (click) = "showTable1()" [ngStyle] = "{'background-color':isClicked1 ?'rgb(255, 243, 226)' :'white' }"> Section 1</span>
+          <span (click) = "showTable2()" [ngStyle] = "{'background-color':isClicked2 ?'rgb(255, 243, 226)' :'white' }">Section 2</span>
+        </div>
+        <div id="section2-cont" *ngIf ="buttonRowShs11"> 
+          <span (click) = "showTable1_shs11()" [ngStyle] = "{'background-color':isClicked1 ?'rgb(248, 231, 226)' :'white' }"> Section 1</span>
+          <span (click) = "showTable2_shs11()" [ngStyle] = "{'background-color':isClicked2 ?'rgb(248, 231, 226)' :'white' }">Section 2</span>
+        </div>
+
+        <div id="section3-cont" *ngIf ="buttonRowShs12"> 
+          <span (click) = "showTable1_shs12()" [ngStyle] = "{'background-color':isClicked1 ?'#c3f6ff' :'white' }"> Section 1</span>
+          <span (click) = "showTable2_shs12()" [ngStyle] = "{'background-color':isClicked2 ?'#c3f6ff' :'white' }">Section 2</span>
+        </div>
+
+
+        <!-- For JHS -->
+      <table id ="student-table1" *ngIf ="Table1">
+        <tr>
+          <th>No.</th>
+          <th>Name</th>
+        </tr>
+        <tr *ngFor="let item of studentList; let i = index">
+          <td>{{i+1}}</td>
+          <td>{{item.studentName}}</td>
+        </tr>
+      </table>
+
+      <table id ="student-table2" *ngIf ="Table2">
+
+        <tr>
+          <th>No.</th>
+          <th>Name</th>
+        </tr>
+        <tr *ngFor="let item of studentList2; let i = index">
+          <td>{{i+1}}</td>
+          <td>{{item.studentName}}</td>
+        </tr>
+      </table>
+
+
+      <!-- For SHS11 -->
+  
+        <table id ="shs11-table1" *ngIf ="shs11table1">
+          <tr>
+            <th>No.</th>
+            <th>Name</th>
+          </tr>
+          <tr *ngFor="let item of studentList; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{item.studentName}}</td>
+          </tr>
+        </table>
+  
+        <table id ="shs11-table2" *ngIf ="shs11table2">
+  
+          <tr>
+            <th>No.</th>
+            <th>Name</th>
+          </tr>
+          <tr *ngFor="let item of studentList2; let i = index">
+            <td>{{i+1}}</td>
+            <td>{{item.studentName}}</td>
+          </tr>
+        </table>
+  
+
+
+      <!-- For SHS12 -->
+  
+      <table id ="shs12-table1" *ngIf ="shs12table1">
+        <tr>
+          <th>No.</th>
+          <th>Name</th>
+        </tr>
+        <tr *ngFor="let item of studentList; let i = index">
+          <td>{{i+1}}</td>
+          <td>{{item.studentName}}</td>
+        </tr>
+      </table>
+
+      <table id ="shs12-table2" *ngIf ="shs12table2">
+
+        <tr>
+          <th>No.</th>
+          <th>Name</th>
+        </tr>
+        <tr *ngFor="let item of studentList2; let i = index">
+          <td>{{i+1}}</td>
+          <td>{{item.studentName}}</td>
+        </tr>
+      </table>
+
+
+    </ion-row>
+
+  <ion-row id ="jhs-row" *ngIf = "studentRow">
+      <h6><ion-icon name="folder-outline"></ion-icon> Junior High School</h6>
+      <div id ="grade7" (click) = "showStudent()"> Grade 7 
+        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+      </div>
+      <div id ="grade8" (click) = "showStudent()"> Grade 8
+        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+      </div>
+      <div id ="grade9" (click) = "showStudent()" > Grade 9
+        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+      </div>
+      <div id ="grade10" (click) = "showStudent()"> Grade 10
+        <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+      </div>
+  </ion-row>
+
+
+
+  <ion-row id ="shs11-row" *ngIf = "studentRow">
+    <h6> <ion-icon name="folder-outline"></ion-icon>Grade 11 Senior High School</h6>
+    <div id ="ABM" (click) = "showStudent_SHS()"> ABM
+      <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+    </div>
+    <div id ="STEM"  (click) = "showStudent_SHS()"> STEM
+      <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+    </div>
+    <div id ="ICT" (click) = "showStudent_SHS()"> ICT
+      <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+    </div>
+    <div id ="HUMMS" (click) = "showStudent_SHS()"> HUMMS
+      <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+    </div>
+  </ion-row>
+
+  <ion-row id ="shs12-row" *ngIf = "studentRow">
+    <h6> <ion-icon name="folder-outline"></ion-icon>Grade 12 Senior High School</h6>
+
+    <div id ="ABM12" (click) = "showStudent_SHS12()">  ABM
+      <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+    </div>
+    <div id ="STEM12" (click) = "showStudent_SHS12()"> STEM
+      <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+    </div>
+    <div id ="ICT12" (click) = "showStudent_SHS12()"> ICT
+      <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+    </div>
+    <div id ="HUMMS12" (click) = "showStudent_SHS12()">  HUMMS
+      <ion-icon name="chevron-forward-circle-outline"></ion-icon>
+    </div>
+  </ion-row>
+
+
+
+
+
+
+
+  </ion-grid>

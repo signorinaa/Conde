@@ -1,0 +1,38 @@
+<ion-content id ="content-container">
+
+  <ion-grid id = "main-container">
+    
+    <ion-row id ="header">
+      <div>
+        <div>
+          <h6 class="header-content">Department of Education</h6>
+          <h6 class="header-content">Region IV-A CALABARZON</h6>
+          <h3 class="header-title">Conde Labac Integrated School</h3>
+          <h6 class="header-content">Conde Labac, Batangas City</h6>
+       </div>
+       </div>
+    </ion-row>
+
+    <ion-row id = "logo">
+
+          <ion-img src = "assets/logo.jpg"></ion-img>
+          <h5>Admin</h5>
+       
+    </ion-row>
+
+
+    <ion-row>
+      <ion-col id ="login-form">
+        <ion-input label="LRN" type="number" label-placement="floating" placeholder="Enter your LRN"></ion-input>
+        <ion-input  label="Password" type="password" label-placement="floating" placeholder="Enter your Password"></ion-input>
+        <ion-button id ="login-bttn" (click) ="goToAdmin_dashboard()">Login</ion-button>
+        <!-- <ion-button id ="forgot-bttn" (click) ="goToForgot()">Forgot Password</ion-button> -->
+      </ion-col>
+
+
+    </ion-row>
+
+  </ion-grid>
+</ion-content>
+
+

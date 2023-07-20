@@ -1,0 +1,30 @@
+<ion-grid>
+
+  <!-- <ion-row id ="logout-row">
+
+
+  </ion-row> -->
+
+  <div id = "logout-row" (click) = "goToLogout()">
+    <h5>Logout</h5>
+    <ion-icon name="log-out-outline"></ion-icon>
+  </div>
+
+  <ion-row id ="header-row">
+        <div>
+          <span>
+          <h5 id ="name">Juan Dela Cruz</h5>
+          <h6 id ="title">Administrator</h6>
+          </span>
+          <ion-icon id ="user-icon" name="person-circle-outline"></ion-icon> 
+        </div>
+  </ion-row>
+
+  <ion-row id ="button-row">
+
+    <div id ="enroll-button" (click) = "goToEnroll()">Enrollments</div>
+    <div id ="form-button" (click) = "goToForm()">Forms</div>
+  </ion-row>
+
+
+</ion-grid>

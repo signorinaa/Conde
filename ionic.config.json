@@ -1,0 +1,7 @@
+{
+  "name": "Conde",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ion-grid{
+    // background: url(../../assets//image/stacked-peaks-haikei.svg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    overflow-y: auto;
+    background-color: white;
+       
+}
+#header{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, #0097b2, #00acb3, #00bea3, #24ce82, #7ed957);
+    padding: .5em 1em;
+    position: relative;
+
+}
+
+#header > div {
+    font: normal 14px Poppins;
+    position: absolute;
+    color: white;
+    right: 2em;
+}
+#header > ion-img{
+    width: 10%;
+    height: auto;
+    margin-right: .8em;
+    
+}
+
+#header > h6{
+    font: normal 14px Poppins-Medium;
+    color: white;
+}
+
+#title-row{
+    display: flex;
+    justify-content: center;
+    // border: 1px solid red;
+}
+
+#title-row > h5{
+    width: 90%;
+    font: normal 16px Poppins-Medium;
+    padding: 1em 0;
+}
+
+#jhs-row, #shs11-row , #shs12-row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    font: normal 14px Poppins;
+}
+
+#shs12-row{
+    padding-bottom: 2em;
+}
+
+#jhs-row > h6, #shs11-row >h6, #shs12-row >h6{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #0097b2;
+    // border: 1px solid red;
+}
+
+#jhs-row > h6 >ion-icon,
+#shs11-row > h6 >ion-icon,
+#shs12-row > h6 >ion-icon
+{
+    color: #0097b2;
+}
+#jhs-row > div, #shs11-row > div, #shs12-row > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font:  normal 14px Poppins-Medium;
+    width: 90%;
+    // border: 1px solid red;
+
+    padding: 1em 1em;
+}
+
+#jhs-row > div > ion-icon,
+#shs11-row > div > ion-icon,
+#shs12-row > div > ion-icon
+{
+    font-size: 16px;
+    color: #0097b2;
+}
+
+#shs11-row{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+#shs12-row{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+#grade7{
+   border-left: 8px solid rgb(255, 150, 2);
+   background-color: rgb(255, 243, 226);
+}
+#grade8{
+    border-left: 8px solid rgb(255, 150, 2);
+    background-color: rgb(255, 243, 226);
+ }
+ #grade9{
+    border-left: 8px solid rgb(255, 150, 2);
+    background-color: rgb(255, 243, 226);
+ }
+ #grade10{
+    border-left: 8px solid rgb(255, 150, 2);
+    background-color: rgb(255, 243, 226);
+ }
+
+ #ABM{
+    border-left: 8px solid rgb(254, 68, 0);
+    background-color: rgb(248, 231, 226);
+ }
+ #STEM{
+    border-left: 8px solid rgb(254, 68, 0);
+    background-color: rgb(248, 231, 226);
+  }
+  #ICT{
+    border-left: 8px solid rgb(254, 68, 0);
+    background-color: rgb(248, 231, 226);
+  }
+  #HUMMS{
+    border-left: 8px solid rgb(254, 68, 0);
+    background-color: rgb(248, 231, 226);
+  }
+
+  #ABM12{
+    border-left: 8PX solid rgb(0, 218, 200);
+    background-color: rgb(214, 253, 251);
+ }
+ #STEM12{
+    border-left: 8PX solid rgb(0, 218, 200);
+    background-color: rgb(214, 253, 251);
+  }
+  #ICT12{
+    border-left: 8PX solid rgb(0, 218, 200);
+    background-color: rgb(214, 253, 251);
+  }
+  #HUMMS12{
+    border-left: 8PX solid rgb(0, 218, 200);
+    background-color: rgb(214, 253, 251);
+  }
+ 
+ #student-list-row{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2em;
+ }
+
+  
+ #section-cont,
+ #section2-cont,
+ #section3-cont
+ {
+    width: 90%;
+    // border: 1px solid red;
+    display: flex;
+    justify-content: center;gap: 1em;
+ }
+
+ #section-cont > span,  
+ #section2-cont > span,
+ #section3-cont > span{
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    // border: 1px solid white;
+    // background-color: white;
+    width: 50%;
+    padding: .7em 0;
+    font: normal 14px Poppins-Medium;
+ }
+
+ #section-cont > span:first-child{
+    background-color: #c3f6ff;
+ }
+
+ #section2-cont > span:first-child{
+    background-color: #c3f6ff;
+ }
+
+ table{
+    width: 90%;
+    margin-top: 1em;
+    border-collapse: collapse;
+ }
+
+ tr{
+    // border-bottom: 1px solid red;
+ }
+
+th{
+    padding: .7em 0;
+    background-color: rgb(255, 150, 2);
+    color: white;
+}
+th:first-child{
+    text-align: center;
+ }
+
+ th:last-child{
+    text-align: left;
+    padding-left: 1em;
+ }
+ td{
+    font: normal 14px Poppins;
+    padding: .7em 0;
+ }
+
+ tr > td:first-child{
+    text-align: center;
+ }
+
+ tr > td:last-child{
+    padding-left: 1em;
+ }
+
+ table tr:nth-child(odd) td{
+    background-color: rgb(255, 243, 226);
+}
+
+table tr:nth-child(even) td{
+    background-color: #ffffff;
+}
+
+
+
+#shs11-table1 tr:nth-child(odd) td,
+#shs11-table2 tr:nth-child(odd) td
+{
+    background-color: rgb(248, 231, 226);
+}
+
+#shs11-table1 tr:nth-child(even) td,
+#shs11-table2 tr:nth-child(even) td
+{
+    background-color: #ffffff;
+}
+
+// Table SHS 12
+#shs12-table1 tr:nth-child(odd) td,
+#shs12-table2 tr:nth-child(odd) td
+{
+    background-color: rgb(214, 253, 251);
+}
+
+#shs12-table1 tr:nth-child(even) td,
+#shs12-table2 tr:nth-child(even) td{
+    background-color: white;
+}
+
+#shs12-table2 tr:nth-child(odd) td{
+    background-color: rgb(214, 253, 251);
+}
+
+#shs11-table1  th,
+#shs11-table2  th
+{
+    background-color: rgb(254, 68, 0);
+}
+
+#shs12-table1  th,
+#shs12-table2  th
+{
+    background-color: rgb(0, 218, 200);
+}

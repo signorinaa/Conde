@@ -1,0 +1,177 @@
+*{
+      margin: 0;
+      padding: 0;
+  }
+  
+  ion-grid{
+    width: 100%;
+    overflow-y:scroll;
+    background-color: white;
+  }
+
+  #header{
+      background-image: linear-gradient(to right, #0097b2, #00acb3, #00bea3, #24ce82, #7ed957);
+  }
+  
+  #header{
+      display: flex;
+      align-items: center;
+      
+      gap: 1em;
+      padding: 1em 0 1em 2em;
+  }
+  
+  #header > ion-img{
+      width: 12%;
+      border-radius: 10px;
+  }
+  
+  #header > h5{
+      color: white;
+      font: normal 14px Poppins;
+  }
+
+
+#button-cont{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1em;
+   padding: 1em 0;
+}
+
+#button-cont > ion-button {
+    text-align: center;
+    --background: none;
+    width: 25%;
+    border-radius: 0px;
+    font: normal 14px Poppins;
+    color: black;
+    --background-activated:none;
+    --box-shadow:0px ;
+   
+
+}
+
+ion-button:focus{
+  --background:red;
+}
+
+.highlighted{
+  // background-color: #beffe2;
+  border-bottom: 1px solid red;
+}
+#button-cont > div:first-child{
+  background-color: #24ce82;
+}
+
+#mission-cont{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+  background: url(../../assets/image/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+
+#core-cont{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+  background: url(../../assets/image/logo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#mission-cont > div , #core-cont >div{
+  width: 90%;
+  border: 1px solid #64CCC5;
+  padding: 1em 1em;
+  background: rgba( 255, 255, 255, 0.85 );
+  // border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+#mission-cont > div > h5, 
+#core-cont > div >h5{
+  text-align: center;
+  font: bold 14px Poppins;
+  // background: rgba( 255, 255, 255, 0.85 );
+  // border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+  
+#mission-cont > div > p,
+#core-cont > div >h4 {
+  text-align: center;
+  font: normal 14px Poppins;
+  // background: rgba( 255, 255, 255, 0.85 );
+
+  // border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 1em 0;
+}
+
+#core-cont > div >h4{
+  padding:.5em;
+
+
+}
+
+
+
+
+  
+  #content > div{
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+  
+  }
+  
+  #building{
+      width: 100%;
+      height: auto;
+  }
+  
+  #content > div > div{
+      background: rgba( 255, 255, 255, 0.9 );
+      box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+      border: 1px solid rgba( 255, 255, 255, 0.18 );
+      position: absolute;
+      top: 1em;
+      width: 90%;
+      padding: 3em 1em 1em 1em;
+  
+  }
+  
+  #notif{
+      font: normal 14px Poppins;
+      line-height: 1.5em;
+      text-align: center;
+  }
+  
+  
+  #banner{
+      width: 100%;
+      height: auto;
+      margin-top: 3em;
+  
+  }
+
+  #banner-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #banner-bottom > ion-img {
+    width:10%;
+    height: auto;
+  }
+
+  #banner-bottom{
+    font: normal 12px Poppins;
+    margin-top: 1em;
+  }

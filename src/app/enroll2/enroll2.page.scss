@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ion-grid{
+    background-color: white;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, #0097b2, #00acb3, #00bea3, #24ce82, #7ed957);
+    padding: .5em 1em;
+}
+#header > ion-img{
+    width: 10%;
+    height: auto;
+    margin-right: .8em;
+    
+}
+
+#header > h6{
+    font: normal 14px Poppins-Medium;
+    color: white;
+}
+
+
+#student-info, #subject{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 2em 0 1em 0;
+}
+
+#section{
+    display:flex;
+    justify-content: center;
+}
+#section > div {
+    width: 90%;
+
+}
+
+#section > div > ion-select{
+    font: normal 14px Poppins-Medium;
+}
+
+
+#subject{
+    padding: 0;
+}
+
+#subject > div{
+    font: normal 14px Poppins-Medium;
+}
+
+#student-info > div, #subject > div{
+    display: flex;
+    width: 95%;
+}
+
+#student-info > div > ion-label{
+    width: 15%;
+    font: bold 13px Poppins;
+}
+#student-info > div > p{
+    font: normal 13px Poppins;
+}
+
+#subject_list{
+    display: flex;
+    // gap: 1.5em;
+    margin-top: 1em;
+    justify-content: center;
+    font: normal 14px Poppins;
+    
+}
+#subject_list > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2em;
+    width: 85%;
+    // border: 1px solid red;
+    padding: .5em 0;
+}
+
+ion-button{
+    --border-radius:5px;
+    --background: #64CCC5;
+    max-height: 2.5em;
+    min-height: 2.5em;
+    font: normal 12px Poppins;
+    padding-right: 10px;
+    color: white;
+}
+
+#subject_list > div >ion-button > ion-icon{
+    margin-right: 5px;
+}
+
+
+table{
+    // border: 1px solid red;
+    border-collapse: collapse;
+    width: 85%;
+}
+
+table tr:nth-child(odd) td{
+    background-color: #f1f1f1;
+}
+
+table tr:nth-child(even) td{
+    background-color: #ffffff;
+}
+
+tr, td{
+    
+    padding: 10px 0;
+    display: flex;
+   
+}
+tr{
+    width: 100%;
+   
+    padding: 0;
+}
+#subject-title{
+   width: 90%;
+   padding-left: 1em;
+}
+
+#buttons{
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    text-align: center;
+
+    // padding-right: 1em;
+}
+#icon-add{
+    padding-right: 5px;
+}
+
+#next {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+#next-bttn{
+    width:85%;
+    margin: 2em 0 0 0;
+    padding: 0;
+    max-height: 3em;
+    min-height: 3em;
+    font: normal 14px Poppins;
+}
+
+#back-bttn{
+    width:85%;
+    margin: 1em 0 0 0;
+    padding: 0;
+    max-height: 3em;
+    min-height: 3em;
+    font: normal 14px Poppins;
+    --background: white;
+    color: #7e7e7e;
+}
+
+#check-icon{
+    color: #64CCC5;
+    font-size: 18px;
+}

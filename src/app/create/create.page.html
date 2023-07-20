@@ -1,0 +1,28 @@
+<ion-content id ="content-container">
+
+  <ion-grid id = "main-container">
+
+    <ion-row>
+      <ion-col id ="login-form">
+        <ion-label> Create an account</ion-label>
+        <ion-input label="LRN" type="number" label-placement="floating" placeholder="Learner Reference Number"></ion-input>
+        <ion-input  label="Fullname" type="text" label-placement="floating" placeholder="Enter your Fullname"></ion-input>
+        <ion-input  label="Password" type="password" label-placement="floating" placeholder="Enter your Password"></ion-input>
+        <ion-input  label="Confirm Password" type="password" label-placement="floating" placeholder="Confirm Password"></ion-input>
+        <ion-button id ="signup-bttn" (click) = "goToHome()">Sign Up</ion-button>
+      </ion-col>
+
+    </ion-row>
+
+
+    <ion-row id = "register">
+      <ion-button (click) = "goToHome()">
+        Have an account? <span>Login</span>
+      </ion-button>
+    </ion-row>
+
+
+  </ion-grid>
+</ion-content>
+
+

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ion-grid{
+    overflow-y: scroll;
+    background-color: white;
+}
+#header{
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, #0097b2, #00acb3, #00bea3, #24ce82, #7ed957);
+    padding: .5em 1em;
+}
+#header > ion-img{
+    width: 10%;
+    height: auto;
+    margin-right: .8em;
+    
+}
+
+#header > h6{
+    font: normal 16px Poppins-Medium;
+    color: white;
+}
+
+#sub-row{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    gap: 1.5em;
+    padding: 1em 0;
+}
+
+
+
+#subjects{
+    font: normal 16px Poppins-Medium;
+    color: black;
+
+}
+
+ion-card{
+    --box-shadow:0px;
+}
+
+#card2, 
+#card3,
+#card4,
+#card5 {
+    width: 90%;
+    padding: 1em 2em;
+    position: relative;
+    border-left: 10px solid     ;
+    // background-color: rgb(238, 226, 254);
+    border-left: 10px solid rgb(137,55,248);
+    background: url(../../assets/image/card/violet.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#card2> p ,
+#card3 >p,
+#card4 >p,
+#card5 >p
+{
+    margin-left: 1em;
+    font: normal 14px Poppins;
+    color: black;
+}
+#card2 > ion-img , 
+#card3 >ion-img,
+#card4 >ion-img,
+#card5>ion-img
+{
+    position: absolute;
+    top:15px;
+    right: 15px;
+    width: 7%;
+    height: auto;
+}
+
+
+#card3 {
+    border-left: 10px solid rgb(255, 150, 2);
+    background: url(../../assets/image/card/orange.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#card4 {
+    border-left: 10px solid rgb(0, 218, 200);
+    background: url(../../assets/image/card/green.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#card5 {
+    border-left: 10px solid rgb(254, 68, 0);
+    background: url(../../assets/image/card/red.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
